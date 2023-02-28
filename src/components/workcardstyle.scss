@@ -1,0 +1,38 @@
+
+.project-heading {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.project-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    background: #1a1919;
+    padding: 1.2rem 1rem;
+    color: aliceblue;
+
+    img {
+        width: 100%;
+    }
+    .pro-btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .project-container {
+        max-width: 90%;   
+        margin: auto;
+        grid-template-columns: 1fr;
+        
+    }
+}

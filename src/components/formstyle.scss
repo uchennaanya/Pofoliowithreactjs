@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem 1rem;
+    border: 1px solid;
+
+    input, textarea {
+        margin-bottom: 1rem;
+        padding: 10px 18px;
+    }
+}

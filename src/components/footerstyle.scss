@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+    
+    background: #000000;
+    color: #ccc;
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 5px;
+        font-size: small;
+    }
+    
+    a {
+        display: inline-block;
+        color: #ccc;
+    }
+    .right {
+        width: 30%;
+        a {
+            padding: 0.5rem 1rem 0 0;
+            font-size: 1.5rem;
+        }
+    } 
+}
+
+@media only screen and (max-width: 640px) {
+    footer {
+        flex-direction: column;
+        padding: 2rem;
+    .right {
+        width: 100%;
+        margin-top: 4rem;
+        }
+    } 
+}

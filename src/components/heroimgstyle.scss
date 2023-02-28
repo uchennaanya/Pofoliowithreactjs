@@ -1,0 +1,60 @@
+$width: 100%;
+$color: white;
+
+.mask {
+    width: $width;
+    height: 100vh;
+    height: 100dvh;
+    position: relative;
+}
+
+.mask::after {
+    content: '';
+    width: $width;
+    height: $width;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero {
+    width: $width;
+    height: $width;
+
+    .content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        color: $color;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+}
+
+.hero-img {
+    width: $width;
+    height: 100vh;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 640px) {
+
+    .hero {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}

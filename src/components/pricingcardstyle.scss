@@ -1,0 +1,67 @@
+.pricing {
+    width: 100%;
+    padding-block: 5rem;
+    margin: 3.77rem 0;
+    position: relative;
+    isolation: isolate;
+}
+
+.container-card {
+    max-width: 50rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.container-card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    transform: skewY(-5deg);
+    inset: 0;
+}
+
+.card {
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    padding: 1rem;
+
+    h3 {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    p {
+        padding: 10px 0;
+    }
+
+    p::after {
+        content: " ~ ";
+    }
+
+    p::before {
+        content: " ~ ";
+    }
+
+    .btc {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem 0;
+    }
+}
+
+.card:hover {
+    background: #141414;
+}
+
+@media only screen and (max-width: 740px) {
+    .container-card {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+
+    }
+}
