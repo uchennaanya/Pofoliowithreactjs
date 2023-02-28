@@ -69,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Pofoliowithreactjs
+
+There quit few thing I did here following best practises,
+- I used useState
+- I made a custom hook for making http calls
+- I use react-router-dom
+- I used React-icons e.t.c
